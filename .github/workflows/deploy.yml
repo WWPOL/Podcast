@@ -17,6 +17,7 @@ jobs:
     - name: Install and Build
       run: |
         yarn install
+        yarn clean
         yarn build
 
     - name: Deploy Dist

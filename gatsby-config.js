@@ -3,6 +3,7 @@ module.exports = {
     title: `The Barry Boys Show`,
     description: `Homepage of The Barry Boys Show, the podcast of your favorite Barry Boys.`,
     author: `@WWPOL`,
+    siteUrl: `https://the.barryboys.show/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,11 +25,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.jpg`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

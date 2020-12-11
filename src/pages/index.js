@@ -1,22 +1,32 @@
 import React from "react";
-import { Link } from "gatsby";
+import styled from "styled-components";
 
-import Layout from "../components/layout";
-import Image from "../components/image";
-import SEO from "../components/seo";
+import SEO from "../components/SEO";
+import Sign from "../components/Sign";
+
+const Landing = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    max-width: 500px;
+    text-align: center;
+  }
+`;
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
+  <>
+    <SEO title="Home" route="/" />
+    <Landing>
+      <h1>Welcome</h1>
+      <p>It's Barry Boy Time</p>
+      <Sign size="large" />
+    </Landing>
+  </>
 );
 
 export default IndexPage;
